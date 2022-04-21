@@ -10,13 +10,13 @@
 -   Free software: MIT license
 -   Documentation: https://matheusfsa.github.io/fake_dataset
 
-# How to Install
+## How to Install
 
 ```bash
 pip install fake-dataset
 ```
 
-# Usage
+## Usage
 
 ```python
 from fake_data import columns, generator
@@ -31,7 +31,6 @@ data_gen.sample(10)
 
 ```
 
--   TODO
 
 ## Credits
 

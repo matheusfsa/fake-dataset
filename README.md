@@ -9,9 +9,27 @@
 
 -   Free software: MIT license
 -   Documentation: https://matheusfsa.github.io/fake_dataset
-    
 
-## Features
+# How to Install
+
+```bash
+pip install fake-dataset
+```
+
+# Usage
+
+```python
+from fake_data import columns, generator
+
+data_gen = generator.DataGenerator(
+    vehicle=columns.CategoricalRandomColumn(categories=["car", "bus", "bicycle"], missing_rate=(0.2, 0.5), na_value="NA"),
+    year=columns.IntegerRandomColumn(values_range=(1950, 2010), missing_rate=(0.1, 0.2)),
+    value=columns.FloatRandomColumn(values_range=(10e4, 10e5), missing_rate=(0.0, 0.0)),
+)
+
+data_gen.sample(10)
+
+```
 
 -   TODO
 

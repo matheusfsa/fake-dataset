@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 
 __all__ = [
     "Column",
-    "ColumnWithNa",
+    "ColumnWithNA",
     "FloatRandomColumn",
     "IntegerRandomColumn",
     "CategoricalRandomColumn",
